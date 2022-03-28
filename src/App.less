@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.less';
+html,
+body {
+  font-family: 'Montserrat', 'NotoSansKR' !important;
+  background: #f9f9f9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ant-menu-vertical .ant-menu-item:not(:last-child),
+.ant-menu-vertical-left .ant-menu-item:not(:last-child),
+.ant-menu-vertical-right .ant-menu-item:not(:last-child),
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.ant-menu-vertical .ant-menu-item,
+.ant-menu-vertical-left .ant-menu-item,
+.ant-menu-vertical-right .ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-vertical-left .ant-menu-submenu-title,
+.ant-menu-vertical-right .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: transparent;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: transparent !important;
+}
+
+.ant-menu-sub.ant-menu-inline .ant-menu-item-group-title {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 16px;
+  padding-left: 48px;
+}
+
+.ant-menu-item-group-list .ant-menu-item,
+.ant-menu-item-group-list .ant-menu-submenu-title {
+  padding-left: 16px;
+}
+
+.ant-page-header {
+  padding: 0px 0px 24px;
+}
+
+.ant-page-header-heading-sub-title {
+  font-size: 11px;
+}
+.ant-page-header-heading-left {
+  align-items: baseline;
+}
+
+.ant-table {
+  font-size: 12px;
+  background: transparent;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+  padding: 4px 8px;
+  min-height: 45px;
+  height: 45px;
+}
+
+.ant-table-thead > tr > th {
+  background: #fff;
+  height: 50px;
+  min-height: 50px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #333;
+  text-align: center !important;
+
+  &:first-child {
+    border-left: 1px solid #e0e0e0;
+  }
+  &:last-child {
+    border-right: 1px solid #e0e0e0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ant-form-horizontal .ant-form-item-label {
+  min-width: 150px;
+  text-align: left;
+
+  & > label::after {
+    display: none;
+  }
+}
+.ant-form-item {
+  margin-bottom: 0px;
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 36px;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-item,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  line-height: 34px;
+}
+
+.ant-input-affix-wrapper {
+  min-height: 36px;
+}
+
+.ant-picker {
+  min-height: 36px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-picker-range {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-menu-vertical > .ant-menu-item,
+.ant-menu-vertical-left > .ant-menu-item,
+.ant-menu-vertical-right > .ant-menu-item,
+.ant-menu-inline > .ant-menu-item,
+.ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+  height: 50px;
 }
