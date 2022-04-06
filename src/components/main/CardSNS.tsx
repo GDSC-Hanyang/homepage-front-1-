@@ -1,7 +1,11 @@
 import * as React from 'react';
 
 function CardSNS() {
-    return<p>hello world!</p>;
+    return(
+        <div>
+            
+        </div>
+    )
 }
 
 export default CardSNS;
