@@ -15,9 +15,15 @@ export default function MainPage() {
     
     return(
         <div>
-            <div>
-                <img  className='MainBanner' src={background} alt='메인 배너'/>
+            <div className='MainBanner'>
+                <div>
+                    <div className='MainBannerBlur'></div>
+                    <img className='Logo' src={logo} alt="로고"/>
+                    <p className='MainTitle'>Google Developer Student Clubs</p>
+                    <p className='MainSubTitle'>Hanyang University</p>
+                </div>
             </div>
+            
             <div>
                 {ActivityList.map((item) => <CardActivities icon={item.icon} title={item.title} content={item.content}/>)}
             </div>

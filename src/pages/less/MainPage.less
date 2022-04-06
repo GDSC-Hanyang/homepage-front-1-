@@ -62,24 +62,37 @@ html::-webkit-scrollbar {
 .MainBanner {
     width: 100%;
     height: 883px;
-    background: rgba(255, 255, 255, 0.72);
+    background-image: url('../../components/main/img/background.png');
+    background-size: cover;
     backdrop-filter: blur(16px);
-
+    top: 100px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.MainBannerBlur {
+    position: absolute;
+    width: 1512px;
+    height: 482px;
+    top: 624px;
+    left: 0px;
+    display: flex;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.617021) 28.41%, #FFFFFF 54.17%, rgba(255, 255, 255, 0.693306) 73.44%, rgba(255, 255, 255, 0) 100%);
 }
 .Logo {
     position: absolute;
     width: 154px;
     height: 70.63px;
+    left: calc(50% - 154px/2);
     top: 313.13px;
+    text-align: center;
+
+    z-index: 900;
 }
 .MainTitle {
-    position: absolute;
-    width: 676px;
-    height: 58.05px;
-    left: calc(50% - 676px/2);
-    top: 495.37px;
-    
     font-family: 'Apple SD Gothic Neo';
     font-style: normal;
     font-weight: 500;
@@ -87,5 +100,16 @@ html::-webkit-scrollbar {
     line-height: 60px;
     text-align: center;
     
+    display: flex;
+    color: #333333;
+}
+.MainSubTitle {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
     color: #333333;
 }
