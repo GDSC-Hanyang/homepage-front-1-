@@ -5,14 +5,27 @@ import instagram from './img/instagram.png';
 import facebook from './img/facebook.png';
 import kakaotalk from './img/kakaotalk.png';
 
-function CardSNS() {
+interface Iprops {
+    img: string,
+    name: string,
+    account: string,
+}
+
+function CardSNS(props: Iprops) {
+    var image : string = '';
     return(
         <div className='SocialCard'>
-         
-            <img className='SocialIcon' src={instagram} alt='instagram'/>
-         
-            <p className='SocialName'>인스타그램</p>
-            <p className='SocialAccount'>@gdsc_hanyang</p>
+            <img className='SocialIcon' src={
+                props.img === "instagram"?
+                instagram
+                : props.img === "facebook"?
+                facebook
+                : props.img === "kakaotalk"?
+                kakaotalk
+                :facebook
+                } alt={props.name}/>
+            <p className='SocialName'>{props.name}</p>
+            <p className='SocialAccount'>{props.account}</p>
         </div>
     )
 }
