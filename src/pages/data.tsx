@@ -72,4 +72,6 @@ const SocialList = [
         account: "@gdsc_hanyang"
     }
 ]
-export { ActivityList, CircleList, SocialList };
+
+const GdscInfo = ` GDCS는 Google Developer Student Clubs의 약자로, 학생들이 개발 및 리더십 능력을 키울 수 있도록 지원하는 프로그램입니다. 기술적 성장을 위한 교육자료를 제공하고, 리더십 개발을 위한 다양한 활동들을 지원합니다. 현재 전 세계 106개국, 국내 21개의 대학교 내에서 자체적으로 운영되고 있습니다. `
+export { ActivityList, CircleList, SocialList, GdscInfo };
