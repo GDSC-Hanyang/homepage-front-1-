@@ -73,5 +73,61 @@ const SocialList = [
     }
 ]
 
-const GdscInfo = ` GDCS는 Google Developer Student Clubs의 약자로, 학생들이 개발 및 리더십 능력을 키울 수 있도록 지원하는 프로그램입니다. 기술적 성장을 위한 교육자료를 제공하고, 리더십 개발을 위한 다양한 활동들을 지원합니다. 현재 전 세계 106개국, 국내 21개의 대학교 내에서 자체적으로 운영되고 있습니다. `
-export { ActivityList, CircleList, SocialList, GdscInfo };
+const GdscInfo = [
+    {
+        text:'GDCS는 Google Developer Student Clubs의 약자로,'
+    },
+    {
+        text:'학생들이 개발 및 리더십 능력을 키울 수 있도록 지원하는 프로그램입니다.'
+    },
+    {
+        text:'기술적 성장을 위한 교육자료를 제공하고, 리더십 개발을 위한 다양한 활동들을 지원합니다.'
+    },
+    {
+        text:'현재 전 세계 106개국, 국내 21개의 대학교 내에서 자체적으로 운영되고 있습니다.'
+    }
+]
+
+const Benefit = [
+    {
+        text: '동료 GDSC Lead들과 함께 성장'
+    },
+    {
+        text: '현업 개발자들과의 다양한 만남'
+    },
+    {
+        text: '전세계 GDSC Lead들과 교류 기회'
+    },
+    {
+        text: 'Google과 협업, 개발자 커뮤니티를 리드'
+    },
+    {
+        text: '개발 스터디 자료 제공'
+    },
+]
+const Benefit2 = [
+    {
+        text: 'Google Developers 프로그램의 일원으로 참여'
+    },
+    {
+        text: 'Google 이벤트, 컨퍼런스에 초대'
+    },
+    {
+        text: '우수한 활동을 한 GDSC Lead에게 구글 I/O 참여 기회'
+    },
+    {
+        text: '본인의 스토리를 전세계에 알릴 수 있는 비디오 참여 기회'
+    },
+]
+const FooterInfo = [
+    {
+        text: 'TEL : 000-0000-0000'
+    },
+    {
+        text: 'FAX: 0000-0000'
+    },
+    {
+        text: '서울시 성동구 왕십리로 222'
+    }
+]
+export { ActivityList, CircleList, SocialList, GdscInfo, Benefit, Benefit2, FooterInfo };
