@@ -7,7 +7,7 @@ type pL = {
     no: number,
     title: string,
     content: string,
-    createDate: string,
+    createDate: string,    
     writer: string,
 }
 
