@@ -1,0 +1,11 @@
+.introContainer {
+  position: relative;
+}
+.introContainer .divider {
+  top: 0;
+  right: 0;
+  width: 1330px;
+  height: 0px;
+  border-bottom: 2px solid #000;
+  margin: 0 auto;
+}
