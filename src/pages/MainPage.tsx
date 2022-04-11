@@ -30,9 +30,12 @@ export default function MainPage() {
                     {GdscInfo.map((item) => <p>{item.text}</p>)}
                 </div>
             </div>
+
+            <div className='BgBlur1'></div>
+            <div className='BgBlur2'></div>
             <p className='Divider'></p>
             <div style={{textAlign:'center'}}>
-                <p className='MiddleTitle'>Activities of GDSC</p>
+                <p className='MiddleTitle1'>Activities of GDSC</p>
                 <ul className='Activity'>
                 
                     <div>
