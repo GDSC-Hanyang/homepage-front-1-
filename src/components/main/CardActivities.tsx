@@ -5,10 +5,11 @@ interface Iprops {
     icon: string,
     title: string,
     content: string,
+    color: string,
 }
 let CardActivities = (props: Iprops) => {
     return(
-        <div className='Card'>
+        <div className='Card' style={{boxShadow: props.color}}>
             <div className='CardIconBack'>
                 <p className='CardIcon'>{ props.icon }</p>
             </div>

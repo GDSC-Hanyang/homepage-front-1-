@@ -65,17 +65,23 @@ const SocialList = [
     {
         img: "instagram",
         name: "인스타그램",
-        account: "@gdsc_hanyang"
+        account: "@gdsc_hanyang",
+        border: "1px solid #5A87EC",
+        shadow: "rgba(90, 135, 236, 0.1)"
     },
     {
         img: "facebook",
         name: "페이스북",
-        account: "@gdsc_hanyang"
+        account: "@gdsc_hanyang",
+        border: "1px solid #DA5747",
+        shadow: "rgba(218, 87, 71, 0.1)"
     },
     {
         img: "kakaotalk",
         name: "카카오톡",
-        account: "@gdsc_hanyang"
+        account: "@gdsc_hanyang",
+        border: "1px solid #F2C14A",
+        shadow: "rgba(255, 183, 75, 0.1)"
     }
 ]
 

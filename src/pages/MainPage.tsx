@@ -40,7 +40,7 @@ export default function MainPage() {
                 
                     <div>
                         {ActivityList.map((item) => 
-                        <li><CardActivities icon={item.icon} title={item.title} content={item.content}/></li>)}
+                        <li><CardActivities icon={item.icon} title={item.title} content={item.content} color={item.color}/></li>)}
                     </div>
                     
                 </ul>
@@ -80,7 +80,7 @@ export default function MainPage() {
                     <ul className='Social'>
                         <div>
                             {SocialList.map((item) => 
-                            <li><CardSNS img={item.img} name={item.name} account={item.account}/></li>)}
+                            <li><CardSNS img={item.img} name={item.name} account={item.account} border={item.border} shadow={item.shadow}/></li>)}
                         </div>
                     </ul>
                 </div>

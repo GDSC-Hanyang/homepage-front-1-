@@ -9,12 +9,14 @@ interface Iprops {
     img: string,
     name: string,
     account: string,
+    border: string,
+    shadow: string,
 }
 
 function CardSNS(props: Iprops) {
     var image : string = '';
     return(
-        <div className='SocialCard'>
+        <div className='SocialCard' style={{border:props.border, boxShadow:'12px 12px 12px '+props.shadow}}>
             <img className='SocialIcon' src={
                 props.img === "instagram"?
                 instagram
